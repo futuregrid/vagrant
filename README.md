@@ -20,4 +20,20 @@ seems to solve this issue, however you can than just go with the
 defaults.
 
 As I do not want to inteact anyways via a GUI thisis te bes solution.
+
+Creaing a BaseBox
+=================
+
+  vagrant basebox define 'u.11.10.server' 'ubuntu-11.10-server-i386'
+  vagrant basebox build 'u.11.10.server'
+
+Starting the Box
+================
+
+  vagrant up
+
+Logging in
+==========
+
+  vagrant ssh
  
