@@ -1,7 +1,38 @@
+======== Vagrant and Devstack Grizzly ===========
+
+This Project is cloned from 
+
+https://github.com/nand2/vagrant-devstack
+
+And modified to work with griszzly and folsom
+
+To use the project do something like
+
+$ gem install vagrant
+
+
+$ git clone git clone git@github.com:futuregrid/vagrant.git
+$ cd grizzly-devstack
+$ ./vbox-create-networks.sh # This will add 2 Host-only networks in VirtualBox (careful if you already have some)
+
+$ vagrant up
+
+horizon wil run at http://172.16.0.201/
+
+Before you do this go into the devstack.conf file and modify the passwords.
+
+
+======= OUTDATED  DOC =================
 Using Vagrant on OSX
 ====================
 
 Gregor von Laszewski, laszewski@gmail.com
+
+
+
+
+
+
 
 When installing vagrant you may run into some issues when installing
 vagrant and veewee. In order to avoid these issuses, I recommend to
