@@ -8,7 +8,7 @@ import getpass
 
 def devstack():
     #local("git clone git://github.com/openstack-dev/devstack.git")
-    f=open('./devstack/localrc', 'w')
+    f=open('./localrc', 'w')
     
     vars = {}
     vars['password'] = password = getpass.getpass()
